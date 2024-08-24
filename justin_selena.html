@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justin & Selena: A Love Story 💖</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&display=swap');
+
+        body {
+            font-family: 'Raleway', sans-serif;
+            background: linear-gradient(135deg, #ff6ec4, #7873f5);
+            color: white;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        header {
+            font-family: 'Pacifico', cursive;
+            background: linear-gradient(135deg, #ff5f6d, #ffc371);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            letter-spacing: 2px;
+            font-size: 28px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1), transparent 70%);
+            transform: translate(-50%, -50%) scale(0);
+            animation: pulse 2s infinite ease-in-out;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: translate(-50%, -50%) scale(0);
+            }
+            50% {
+                transform: translate(-50%, -50%) scale(1);
+            }
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #ff5f6d;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+
+        .timeline-container {
+            padding: 20px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+            opacity: 0;
+            transform: translateY(100px);
+            animation: slideUp 1s forwards;
+        }
+
+        .timeline-container.left {
+            left: 0;
+        }
+
+        .timeline-container.right {
+            left: 50%;
+        }
+
+        .timeline-container:nth-child(even) {
+            animation-delay: 0.5s;
+        }
+
+        .timeline-container:nth-child(odd) {
+            animation-delay: 1s;
+        }
+
+        @keyframes slideUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .timeline-container::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -17px;
+            background-color: #ff5f6d;
+            border: 4px solid white;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .timeline-container.right::after {
+            left: -16px;
+        }
+
+        .timeline-content {
+            padding: 20px 30px;
+            background: linear-gradient(135deg, #6e45e2, #88d3ce);
+            position: relative;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .timeline-content:hover {
+            transform: scale(1.05);
+        }
+
+        .timeline-content img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            transition: opacity 0.3s ease;
+        }
+
+        .timeline-content img:hover {
+            opacity: 0.8;
+        }
+
+        .timeline-content h2 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 24px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        .timeline-content h2::before {
+            content: '💑 ';
+            font-size: 28px;
+            margin-right: 10px;
+            animation: bounceIn 1.2s infinite;
+        }
+
+        @keyframes bounceIn {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+        .timeline-content p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .timeline-content .date {
+            font-size: 16px;
+            font-weight: 300;
+            color: #ffd700;
+        }
+
+        .timeline-container.left .timeline-content h2::before {
+            content: '❤️ ';
+        }
+
+        .timeline-container.right .timeline-content h2::before {
+            content: '💔 ';
+        }
+
+        @media screen and (max-width: 768px) {
+            .timeline-container.left, .timeline-container.right {
+                width: 100%;
+                left: 0;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+
+            .timeline-container.right {
+                left: 0;
+            }
+
+            .timeline-container::after {
+                left: 60px;
+            }
+
+            .timeline-content img {
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Justin & Selena: A Love Story 💖</h1>
+    </header>
+
+    <div class="timeline">
+        <div class="timeline-container left">
+            <div class="timeline-content">
+                <h2>2009: The Beginning</h2>
+                <p>Justin Bieber and Selena Gomez met for the first time as teens. The world would soon become obsessed with their relationship.</p>
+                <p class="date">November 2009</p>
+                <img src="images/justin_selena_2009.jpg" alt="Justin and Selena in 2009">
+            </div>
+        </div>
+
+        <div class="timeline-container left">
+            <div class="timeline-content">
+                <h2>2011: Officially Dating</h2>
+                <p>The couple made their first official appearance together at the Vanity Fair Oscar Party, confirming their relationship.</p>
+                <p class="date">February 2011</p>
+                <img src="images/oscar_party.jpg" alt="Justin and Selena at Vanity Fair Oscar Party">
+            </div>
+        </div>
+
+        <div class="timeline-container right">
+            <div class="timeline-content">
+                <h2>2012: The Breakup</h2>
+                <p>Despite their love, the couple faced difficulties and decided to part ways, leaving fans heartbroken.</p>
+                <p class="date">November 2012</p>
+                <img src="images/breakup.jpg" alt="Justin and Selena breakup">
+            </div>
+        </div>
+
+        <div class="timeline-container left">
+            <div class="timeline-content">
+                <h2>2014-2017: On and Off Again</h2>
+                <p>The couple was seen together multiple times during these years, sparking rumors of a rekindled romance.</p>
+                <p class="date">2014 - 2017</p>
+                <img src="images/on_off.jpg" alt="Justin and Selena on and off relationship">
+            </div>
+        </div>
+
+        <div class="timeline-container right">
+            <div class="timeline-content">
+                <h2>2018: The End</h2>
+                <p>In 2018, the couple decided to end their relationship for good. Justin later married Hailey Baldwin, while Selena focused on her career and well-being.</p>
+                <p class="date">March 2018</p>
+                <img src="images/the_end.jpg" alt="Justin and Selena final breakup">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
