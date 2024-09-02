@@ -1,3 +1,13 @@
+.intro {
+    padding-top: 250px;
+    margin-top: 100px;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 body {
     font-family: 'Moderustic', sans-serif;
     background-color: #f7f7f7;
@@ -9,12 +19,18 @@ body {
     height: 100vh;
 }
 
-.container {
-    background-color: #fff;
+.intro .text-container p {
+    font-size: 18px;
+}
+
+.base-container {
+    background-color: lightblue;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 40px;
-    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
     text-align: center;
 }
 
@@ -33,6 +49,7 @@ body {
 
 .text-container {
     margin-bottom: 30px;
+    padding: 0 95px;
 }
 
 .text-container p {
@@ -44,4 +61,23 @@ body {
 .text-container p strong {
     font-weight: 700;
     color: #ff5f6d;
+}
+
+.divider {
+    border-bottom: 2px solid lightpink; /* Line color and thickness */
+    margin: 20px 0;               /* Space around the line */
+}
+
+.fav-destination-box {
+    margin: 30px 0;
+}
+
+.biography-box {
+    border: 2px solid red;
+    background-color: pink;
+    border-radius: 20px;
+}
+
+.biography-list {
+    text-align: left;
 }
