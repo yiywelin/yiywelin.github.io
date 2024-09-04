@@ -1,0 +1,245 @@
+<html>
+<head>
+    <title>Your Name Goes Here - Challenge 1</title>
+
+    <!-- Internal CSS styling -->
+    <style>
+
+        /* DO NOT MODIFY THIS */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header-box, .middle-box, .bottom-box {
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        /* Add your CSS script below */
+        .header-box {
+            border-width: 8px;
+            border-color: blue;
+            border-style: dotted solid;
+            background-color: black;
+            color: white;
+        }
+
+        .header-box h1 {
+            font-style: italic;
+            text-decoration: underline;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            letter-spacing: 15px;
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            line-height: 25px;
+        }
+
+        .middle-box {
+            border: 8px dotted red;
+            background-color: yellow;
+        }
+
+        .middle-box h1 {
+            border: 3px dotted blue;
+            background-color: pink;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 12px;
+            margin: 15px auto;
+            width: 400px;
+        }
+
+        .early-life {
+            text-align: justify;
+            line-height: 32px;
+        }
+
+        .more-info {
+            background-color: rgb(27, 239, 239);
+            font-style: italic;
+            text-align: center;
+            padding: 7px 10px;
+        }
+
+        .more-info a {
+            text-decoration: none;
+            color: rgb(245, 121, 4);
+            cursor: pointer;
+        }
+
+        .more-info a:hover {
+            background-color: yellow;
+            color: black;
+        }
+
+        .bottom-box {
+            border: 3px solid green;
+            border-radius: 20px;
+            background-color: rgba(70, 241, 22, 0.828);
+        }
+
+        .bottom-box h2 {
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin-bottom: 15px;
+        }
+
+        li {
+            border-bottom: 3px dotted black;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: 10px;
+            list-style-image: url(./images/justin_list_button.png);
+            margin-left: 50px;
+        }
+
+        .single {
+            font-style: italic;
+            color: orangered;
+            text-decoration: line-through;
+        }
+
+        .married {
+            color: blue;
+            font-weight: bold;
+        }
+
+        .love-box {
+            border: 5px solid purple;
+            margin-bottom: 40px;
+        }
+
+        .love-box h2 {
+            border: 4px dotted red;
+            background-color: pink;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .love-box h2, form {
+            margin: 20px;
+        }
+
+        label {
+            display: block;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            line-height: 35px;
+        }
+
+        input, textarea {
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            width: 50%;
+            height: 35px;
+        }
+
+        textarea {
+            height: 80px;
+        }
+
+        .button {
+            background-color: black;
+            color: white;
+            padding: 10px 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            border: none;
+        }
+
+        .footer-box {
+            background-color: rgb(138, 135, 135);
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .outer-box {
+            background-image: url(./images/justin_bg.jpg);
+            background-repeat: no-repeat; /* Do not repeat the image */
+            background-size: cover; /* Resize the background image to cover the entire container */
+            margin-left: auto;
+            margin-right: auto;
+            padding: 30px 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <!--
+        DO NOT MODIFY the baseline HTML script given to you!
+        For example,
+        - Do NOT change 'class' names
+        - Do NOT change the HTML structure (don't shift elements around)
+    -->
+
+    <div class="outer-box">
+
+        <div class="header-box">
+            <h1>Justin Bieber</h1>
+            <p>
+                Justin Drew Bieber is a Canadian singer and songwriter. Discovered at age 13 by talent manager Scooter Braun after he had watched his YouTube cover song videos, Bieber was signed to RBMG Records in 2008. 
+            </p>
+        </div>
+
+
+        <div class="middle-box">
+            <h1>Early Life</h1>
+            <p class="early-life">
+                Bieber was born on March 1, 1994, in London, Ontario, at St Joseph's Hospital, and was raised in Stratford, Ontario. He is the only child of Jeremy Jack Bieber and Pattie Mallette, who were never married. Mallette's mother Diane and stepfather Bruce helped her raise her son. Bieber's ancestry includes French-Canadian, Irish, English, Scottish, and German.
+            </p>
+
+            <p class="more-info">
+                For more information, visit <a href="https://en.wikipedia.org/wiki/Justin_Bieber" target="_blank">this Wiki page</a> and read!
+            </p>
+        </div>
+
+        <div class="bottom-box">
+            <h2>Describe Justin</h2>
+            <ul>
+                <li>Talented</li>
+                <li>Handsome</li>
+                <li>He is <span class="single">single</span> <span class="married">married</span></li>
+            </ul>
+        </div>
+
+        <div class="love-box">
+            <h2>Send My Love</h2>
+            
+            <form>
+
+                <div class="form-field">
+                    <label>Name: </label>
+                    <input type="text" name="myname">
+                </div>
+
+                <div class="form-field">
+                    <label>Email: </label>
+                    <input type="text" name="email">
+                </div>
+
+                <div class="form-field">
+                    <label>Love Letter:</label>
+                    <textarea name="loveletter"></textarea>
+                </div>
+
+                <input type="submit" class="button" value="Send My Love">
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-box">
+        <p>
+            Copyright &copy; 2020 Your Name Goes Here
+        </p>
+    </div>
+    
+</body>
+</html>
