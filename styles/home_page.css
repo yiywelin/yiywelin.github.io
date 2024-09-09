@@ -63,11 +63,6 @@ body {
     color: #ff5f6d;
 }
 
-.divider {
-    border-bottom: 2px solid lightpink; /* Line color and thickness */
-    margin: 20px 0;               /* Space around the line */
-}
-
 .fav-destination-box {
     margin: 30px 0;
 }
@@ -77,7 +72,42 @@ body {
     background-color: pink;
     border-radius: 20px;
 }
-
-.biography-list {
+biography-list {
     text-align: left;
+}
+
+.card .card-header .nav .nav-item .nav-link.active {
+    background-color: rgba(255, 0, 0, 0.878);
+    color: white;
+}
+
+.card .card-header .nav .nav-item .nav-link {
+    color: black;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+.social-media .line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #333;
+    margin: 0 10px;
+}
+
+.logo {
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.2);
 }

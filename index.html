@@ -7,6 +7,10 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap" rel="stylesheet">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
         <title>Personal Website</title>
     </head>
     <body>
@@ -20,10 +24,8 @@
                     <p>I'm <strong>Lynn</strong>, a year-2 Information Systems (IS) student at SMU.</p>
                     <p>In my free time, I love to cook up some kimchi-bokkeum-bap and binge-watch K-variety shows. I'm excited to continue learning, especially in WAD2 with Prof. Kyong—it's gonna be so fun, fr! </p>
                 </div>
-            </div>
-            
 
-            <div class="divider"></div>
+            </div>
 
             <div class="fav-destination-box">
                 <h2>My Favorite Travel Destination</h2>
@@ -35,33 +37,107 @@
 
             </div>
 
-            <div class="biography-box">
-                <h2>My Brief Biography</h2>
-                <ul class="biography-list">
-                    <li>Full name: Yi Ywe Lin</li>
-                    <li>Nickname: Lynn</li>
-                    <li>Education: 
-                        <ul>
-                            <li>2020 - 2023: Ngee Ann Polytechnic (Diploma in Information Technology)</li>
-                            <li>2023 - present: Singapore Management University (Information Systems)</li>
+            <div class="card border-danger">
+                <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link active" id="biography-tab" data-bs-toggle="tab" href="#biography" role="tab" aria-controls="biography" aria-selected="true">Biography</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link" id="internship-tab" data-bs-toggle="tab" href="#internship" role="tab" aria-controls="internship" aria-selected="false">Internship</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link" id="interests-tab" data-bs-toggle="tab" href="#interests" role="tab" aria-controls="interests" aria-selected="false">Interests</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-body tab-content" id="myTabContent">
+                    <!-- Biography Content -->
+                    <div class="tab-pane fade show active" id="biography" role="tabpanel" aria-labelledby="biography-tab">
+                        <h5 class="card-title text-center text-danger">Biography</h5>
+                        <ul class="card-text text-start">
+                            <li>Full name: Yi Ywe Lin</li>
+                            <li>Nickname: Lynn</li>
+                            <li>Education: 
+                                <ul>
+                                    <li>2020 - 2023: Ngee Ann Polytechnic (Diploma in Information Technology)</li>
+                                    <li>2023 - present: Singapore Management University (Information Systems)</li>
+                                </ul>
+                            </li>
                         </ul>
-                    </li>
-                    <li>Internship:
-                        <ul>
+                        
+                    </div>
+                
+                    <!-- Internship Content -->
+                    <div class="tab-pane fade" id="internship" role="tabpanel" aria-labelledby="internship-tab">
+                        <h5 class="card-title text-center text-danger">Internship</h5>
+                        <ul class="card-text text-start">
                             <li>2022 - 2023: Developer Intern at OCBC</li>
                         </ul>
-                    </li>
-                    <li>Interests:
-                        <ul>
+                    </div>
+                
+                    <!-- Interests Content -->
+                    <div class="tab-pane fade" id="interests" role="tabpanel" aria-labelledby="interests-tab">
+                        <h5 class="card-title text-danger">Interests</h5>
+                        <ul class="card-text text-start">
                             <li>Cycling</li>
-                            <li>Watching shows</li>
+                            <li>Watching TV Shows</li>
                             <li>Singing</li>
                         </ul>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
+
+            <div class="social-media">
+                <span class="line"></span>
+                <a href="#"><img class="logo" src="images/instagram.png" alt="Instagram Logo"></a>
+                <a href="#"><img class="logo" src="images/linkedin.webp" alt="LinkedIn Logo"></a>
+                <a href="#"><img class="logo" src="images/github.png" alt="GitHub Logo"></a>
+                <span class="line"></span>
+            </div>
+
+            <!-- Link trigger modal -->
+            <p> Connect with me 
+                <a class="text-center" data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="#">here!</a>
+            </p>
+
+            <!-- Modal for Contact Section-->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Let's Connect!</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3 text-start">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Your name">
+                                  </div>
+                                <div class="mb-3 text-start">
+                                  <label for="exampleInputEmail1" class="form-label">Email</label>
+                                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="name@example.com">
+                                </div>
+                                <div class="mb-3 text-start">
+                                    <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Hey.."></textarea>
+                                  </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
         </div>
 
-        
+        <!-- Bootstrap JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
     </body>
 </html>
