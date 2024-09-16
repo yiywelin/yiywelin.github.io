@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#select-table {
+    margin: auto;
+}
+
+img {
+    width: 100px; /* You can change this to fit your screen */
+    cursor: pointer;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    /* border: 3px solid blue; */
+    margin-bottom: 5px;
+}
+
+.column {
+    display: flex;
+    /* border: 1px solid red; */
+    margin: 5px;
+}
+
+table {
+    margin: 0 auto; /* This centers the table horizontally */
+}
