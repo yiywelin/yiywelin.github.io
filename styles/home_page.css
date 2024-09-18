@@ -1,6 +1,6 @@
 .intro {
-    padding-top: 250px;
-    margin-top: 100px;
+    padding: 15px 0;
+    margin-top: 0;
 }
 
 h1 {
@@ -15,8 +15,6 @@ body {
     padding: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
 
 .intro .text-container p {
@@ -32,6 +30,12 @@ body {
     margin-right: auto;
     width: 800px;
     text-align: center;
+}
+
+@media (min-width: 768px) {
+    .base-container {
+        width: 800px;
+    }
 }
 
 .profile-header {
@@ -64,7 +68,7 @@ body {
 }
 
 .fav-destination-box {
-    margin: 30px 0;
+    padding: 15px 0;
 }
 
 .biography-box {
@@ -111,3 +115,62 @@ biography-list {
 .logo:hover {
     transform: scale(1.2);
 }
+
+/* dark-mode */
+.dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: lightblue;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.dark-mode-toggle:hover {
+    background-color: black;
+    transform: scale(1.1);
+}
+
+.dark-mode {
+    background-color: #222;
+    color: #fff;
+}
+
+.dark-mode .base-container {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode h1, .dark-mode p {
+    color: white;
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 20px;  /* Distance from the bottom */
+    right: 20px;   /* Distance from the right */
+    /* display: none; Hidden by default */
+    background-color: lightblue;
+    color: black;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    z-index: 1000;  /* Ensures it's above other elements */
+}
+
+#backToTop:hover {
+    background-color: rgb(43, 127, 237);
+    transform: scale(1.1);
+}
+
